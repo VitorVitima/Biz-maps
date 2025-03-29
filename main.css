@@ -1,0 +1,199 @@
+:root{
+    --black: #000000ff;
+    --green: #88d499ff;
+    --red: #f79d92ff;
+    --blue: #b2d1fdff;
+    --white: #ffffffff;
+    --yellow: #F8B853;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    line-height: 25px;
+
+}
+header {
+    width: 100%;
+    min-height: 800px;
+    background-color: var(--blue);
+    
+    background-image: url("img/fundo/fundoHeader/quebradoFolha3.png");
+    background-position: bottom;
+}
+header div.topoHeader{
+    width: 100%;
+    height: 200px;
+    
+    display: flex;
+    display: flex;
+    justify-content:space-around;
+}
+
+header div.logoHeader img{
+    width: 200px;
+}
+header div.linksHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a{
+    margin: 0px 15px;
+    text-decoration: none;
+}
+header a:hover{
+    color: var(--red);
+}
+header a:nth-child(4){
+    border: 2px black solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+header a:nth-child(4):hover{
+    background-color: var(--black);
+}
+
+header div.meioHeader{
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+header div.meioHeader div.pesquisa{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: bold;
+}
+header div.meioHeader div.pesquisa input{
+    width: 400px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-width: 0px;
+}
+header div.meioHeader div.pesquisa input:focus{
+    border: 0px;
+    box-shadow: 0 0 0 0;
+    outline: 0px;
+}
+header div.meioHeader div.imagemHeader{
+    width: 40%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+main{
+    width: 100%;
+    background-color: var(--white);
+}
+main .textoMain{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0px;
+    gap: 50px;
+}
+main .textoMain .text1{
+    width: 35%;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+main .textoMain .text1 h1{
+    font-size: 30px;
+    color: var(--yellow);
+}
+main .textoMain .text1 span:nth-child(2){
+    width: 70%;
+    font-size: 20px;
+}
+main .textoMain .text2{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+
+}
+main .textoMain .text2 span{
+    width: 500px;
+}
+main .textoMain .text2 .buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+main .textoMain .text2 .buttons a{
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--yellow);
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+main .textoMain .text2 .buttons a:hover{
+    background-color: var(--blue);
+}
+
+main .empresas{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    background-image: url("img/fundo/fundoMain/cinzaDestaque.png");
+}
+
+
+footer{
+    width: 100%;
+    background-image: url("img/fundo/fundoPrincipal.png");
+    background-position: center;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer > .logoFooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer > .logoFooter img{
+    width: 130px;
+    height: 130px;
+}
+footer > .linksFooter{
+    display: flex;
+    justify-content: center;
+}
+footer > .linksFooter a{
+    padding: 0px 15px;
+    color: var(--black);
+    text-decoration: none;
+}
+footer > .linksFooter a:hover{
+    text-decoration: underline;
+}
+footer > .direitos{
+    display: flex;
+    justify-content: center;
+    padding: 35px 0px 20px 0px;
+    font-size:15px;
+    color: #505050;
+}

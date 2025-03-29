@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz Maps</title>
+    <link rel="stylesheet" href="cssPadrao.css">
+</head>
+<body>
+    <header>
+        <div class="topoHeader">
+            <div class="logoHeader">
+                <a href="main.html">
+                    <img src="img/logos/logoTextoAoLado.png" alt="">
+                </a>
+            </div>
+            <div class="linksHeader">
+                <a href="main.html">Página inicial</a>
+                <a href="sobreNos.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+                <a href="anuncieAqui.html">Anuncie aqui</a>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer>
+        <div class="logoFooter">
+            <img src="img/logos/Design_sem_nome__3_-removebg-preview.png" alt="">
+        </div>
+        <div class="linksFooter">
+            <a href="main.html">Página inicial</a>
+            <a href="sobreNos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="anuncieAqui.html">Anuncie aqui</a>
+        </div>
+        <div class="direitos">
+        </div>
+    </footer>
+    <script>
+        let d = new Date();
+        const direitosFooter = document.querySelector("div.direitos")
+        console.log(direitosFooter)
+        direitosFooter.appendChild(document.createTextNode("© " + d.getFullYear() + " Biz Maps. Todos os direitos reservados."))
+    </script>
+</body>
+</html>

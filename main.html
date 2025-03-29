@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz Maps</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="import" href="script.js">
+</head>
+<body>
+    <header>
+        <div class="topoHeader">
+            <div class="logoHeader">
+                <a href="main.html">
+                    <img src="img/logos/logoTextoAoLado.png" alt="">
+                </a>
+            </div>
+            <div class="linksHeader">
+                <a href="main.html">Página inicial</a>
+                <a href="sobreNos.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+                <a href="anuncieAqui.html">Anuncie aqui</a>
+            </div>
+        </div>
+        <div class="meioHeader">
+            <div class="pesquisa">
+                <span>
+                    Encontre empresas e negócios que podem te ajudar
+                </span>
+                <input placeholder="Pesquise aqui..." type="search">
+            </div>
+            <div class="imagemHeader">
+                <img src="img/header/download__4_-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="textoMain">
+            <div class="text1">
+                <h1>
+                    Seu negocio no mapa do sucesso
+                </h1>
+                <span>
+                    Especializados em impulsionar negócios no meio digital, aproximamos empresas e clientes, fortalecendo conexões e aumentando sua visibilidade online.
+                </span>
+            </div>
+            <div class="text2">
+                <span>
+                    Somos o principal portal de anúncios empresariais do Brasil, abrangendo todas as categorias de negócios em diversas cidades do país. Nosso objetivo é impulsionar o crescimento dos anunciantes, gerando um alto volume de leads e potenciais clientes.    
+                </span>
+                <span>
+                    Prezamos pela excelência na prestação de serviços, garantindo a atualização constante do site para tornar a busca mais eficiente para nossos usuários.
+                </span>
+                <span>
+                    Divulgue sua empresa conosco e amplie suas oportunidades de negócio! 🚀
+                </span>
+                <div class="buttons">
+                    <a href="anuncieAqui.html">Anuncie aqui</a>
+                    <a href="">Lista de empresas</a>
+                </div>
+            </div>
+        </div>
+        <div class="empresas">
+            <h2>
+                Conheça empresas em destaque na Biz Maps
+            </h2>
+            <div class="empresasDiv">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logoFooter">
+            <img src="img/logos/Design_sem_nome__3_-removebg-preview.png" alt="">
+        </div>
+        <div class="linksFooter">
+            <a href="main.html">Página inicial</a>
+            <a href="sobreNos.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="anuncieAqui.html">Anuncie aqui</a>
+        </div>
+        <div class="direitos">
+        </div>
+    </footer>
+    <script>
+        let d = new Date();
+        const direitosFooter = document.querySelector("div.direitos")
+        console.log(direitosFooter)
+        direitosFooter.appendChild(document.createTextNode("© " + d.getFullYear() + " Biz Maps. Todos os direitos reservados."))
+    </script>
+</body>
+</html>
