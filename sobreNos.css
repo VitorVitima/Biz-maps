@@ -1,0 +1,32 @@
+main{
+    max-width: 700px;
+    height: calc(100vh - 200px - 235px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main span{
+    padding-top: 15px;
+    font-size: 20px;
+}
+main span:nth-child(1){
+    font-weight: bold;
+}
+main span:nth-child(3){
+    padding-top: 0px;
+    margin: 25px 0px;
+}
+main span:nth-child(4){
+    padding-top: 0px;
+    margin: 15px 0px;
+}
+
+
+main h1{
+    font-weight: 100;
+}
+main span:nth-child(5){
+    font-size: 15px;
+}

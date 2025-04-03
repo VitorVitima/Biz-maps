@@ -1,0 +1,58 @@
+:root{
+    --black: #000000ff;
+    --green: #88d499ff;
+    --red: #f79d92ff;
+    --blue: #b2d1fdff;
+    --white: #ffffffff;
+    --yellow: #F8B853;
+}
+
+main{
+    max-width: 700px;
+    min-height: calc(100vh - 200px - 235px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main span{
+    margin: 1px 0px 20px 0px;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+}
+main form input{
+    padding: 15px 10px;
+    margin: 15px 0px 10px 0px;
+}
+main form input:focus{
+    border: 0px red solid;
+    outline-style: solid;
+    outline-color: var(--yellow);
+}
+
+main textarea{
+    height: 240px;
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+main textarea:focus{
+    border: 0px red solid;
+    outline-style: solid;
+    outline-color: var(--yellow);
+}
+
+main form input.enviar{
+    width: 150px;
+    background-color: var(--yellow);
+    color: var(--black);
+    border: 0px;
+    margin-bottom: 20px;
+}
+main form input.enviar:hover{
+    background-color: var(--blue);
+    cursor: pointer;
+}

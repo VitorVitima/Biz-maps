@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biz Maps</title>
     <link rel="stylesheet" href="cssPadrao.css">
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,25 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <h1>
+            Contato
+        </h1>
+        <span>
+            ENTRE EM CONTATO CONOSCO E EM BREVE RETORNAREMOS
+        </span>
+        <form action="">
+            <label for="seuNome">Seu Nome</label>
+            <input type="text" name="seuNome" id="seuNome" required>
+            <label for="seuEmail">Seu e-mail</label>
+            <input type="text" name="seuEmail" id="seuEmail" required>
+            <label for="assunto">Assunto</label>
+            <input type="text" name="assunto" id="assunto" required>
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+    </main>
     <footer>
         <div class="logoFooter">
             <img src="img/logos/Design_sem_nome__3_-removebg-preview.png" alt="">

@@ -104,7 +104,7 @@ main .textoMain{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
     gap: 50px;
 }
 main .textoMain .text1{
@@ -155,9 +155,26 @@ main .textoMain .text2 .buttons a:hover{
 main .empresas{
     width: 100%;
     height: 600px;
-    background-color: red;
     background-image: url("img/fundo/fundoMain/cinzaDestaque.png");
+    background-position: top;
 }
+
+main .empresas h2{
+    text-align: center;
+    padding-top: 130px;
+}
+main .empresas h2 span{
+    color: var(--yellow);
+}
+
+main .empresas .empresasDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 footer{
