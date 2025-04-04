@@ -6,12 +6,10 @@
     --white: #ffffffff;
     --yellow: #F8B853;
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     line-height: 25px;
-
 }
 header {
     width: 100%;
@@ -26,7 +24,6 @@ header div.topoHeader{
     height: 200px;
     
     display: flex;
-    display: flex;
     justify-content:space-around;
 }
 
@@ -37,6 +34,9 @@ header div.linksHeader{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+header div.menuHam{
+    display: none;
 }
 header a{
     margin: 0px 15px;
@@ -64,7 +64,7 @@ header div.meioHeader{
 
 }
 header div.meioHeader div.pesquisa{
-    width: 40%;
+    max-width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,6 +91,74 @@ header div.meioHeader div.imagemHeader{
     user-select: none;
     display: flex;
     justify-content: center;
+}
+@media (max-width: 1000px) {
+
+    header {
+        min-height: 500px;
+    }
+
+    header div.topoHeader{
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    header div.topoHeader div.menuHam{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    header div.topoHeader div.menuHam div{
+        width: 50px;
+        height: 10px;
+        background-color: var(--yellow);
+        border-radius: 5px;
+    }
+    header div.linksHeader{
+        display: none;
+    }
+
+    header div.meioHeader{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    header div.meioHeader div.imagemHeader{
+        width: 0%;
+    }
+    header div.meioHeader div.imagemHeader img{
+        width: 0px;
+    }
+
+    header div.meioHeader div.pesquisa span{
+        text-align: center;
+    }
+
+    header div.meioHeader div.pesquisa{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-size: 14px;
+        color: var(--black);
+        font-weight: bold;
+    }
+    header div.meioHeader div.pesquisa input{
+        width: 80%;
+        min-width: 280px;
+        height: 50px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border-width: 0px;
+    }
 }
 
 
@@ -122,7 +190,7 @@ main .textoMain .text1 h1{
     color: var(--yellow);
 }
 main .textoMain .text1 span:nth-child(2){
-    width: 70%;
+    max-width: 100%;
     font-size: 20px;
 }
 main .textoMain .text2{
@@ -134,7 +202,7 @@ main .textoMain .text2{
 
 }
 main .textoMain .text2 span{
-    width: 500px;
+    max-width: 500px;
 }
 main .textoMain .text2 .buttons{
     display: flex;
@@ -173,6 +241,48 @@ main .empresas .empresasDiv{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1000px){
+    main .textoMain{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .textoMain .text1{
+        width: 100%;
+    }
+
+    main .textoMain .text1 span:nth-child(2){
+        max-width: 500px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 600px) {
+
+    main .textoMain .text1{
+        text-align: center;
+    }
+    main .textoMain .text1 span{
+        padding: 0px 20px;
+    }
+    main .textoMain .text2{
+        text-align: center;
+        padding: 0px 20px;
+    }
+    main .textoMain .text2 .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    main .textoMain .text2 .buttons a{
+        width: 150px;
+        text-align: center;
+    }
 }
 
 
